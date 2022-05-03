@@ -13,10 +13,7 @@ namespace Homework1.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
+
 
         public IActionResult Privacy()
         {
@@ -30,13 +27,13 @@ namespace Homework1.Controllers
         }
 
         [HttpGet]
-        public IActionResult SendForm()
+        public IActionResult Index()
         {
             return View();
         }
 
         [HttpPost]
-        public IActionResult SendForm(CardForm cardForm)
+        public IActionResult Index(CardForm cardForm)
         {
             if (ModelState.IsValid)
             {
